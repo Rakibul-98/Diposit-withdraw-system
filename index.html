@@ -44,7 +44,7 @@
                 </div>
                 <div class="balance col">
                     <p>Balance</p>
-                    <h1>$ <span>500</span></h1>
+                    <h1>$ <span id="balance">500</span></h1>
                 </div>
             </div>
             <div class="transaction-row">
@@ -52,13 +52,13 @@
                     <p>Deposit</p>
                     <input id="deposit-amount" type="text" placeholder="$ amount you want to deposit">
                     <br>
-                    <button onclick="handleDepositWithdraw('deposit')" class="deposit-btn">Deposit</button>
+                    <button onclick="handleDepositWithdraw('deposit','true')" class="deposit-btn">Deposit</button>
                 </div>
                 <div class="col">
                     <p>Withdraw</p>
                     <input id="withdraw-amount" type="text" placeholder="$ amount you want to withdraw">
                     <br>
-                    <button onclick="handleDepositWithdraw('withdraw')" class="withdraw-btn">Withdraw</button>
+                    <button onclick="handleDepositWithdraw('withdraw','false')" class="withdraw-btn">Withdraw</button>
                 </div>
             </div>
         </div>
