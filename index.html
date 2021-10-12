@@ -18,8 +18,8 @@
         </ul>
     </header>
     <main>
-        <div class="login">
-            <h2 class="title">Welcome to online banking system</h2>
+        <div id="login-sec" class="login">
+            <h2 class="title">Login to transaction</h2>
             <div class="login-form">
                 <label for="">Email</label>
                 <br>
@@ -29,7 +29,37 @@
                 <br>
                 <input class="text-input" type="password">
                 <br>
-                <button class="login-btn">Login</button>
+                <button onclick="handleLogin()" class="login-btn">Login</button>
+            </div>
+        </div>
+        <div id="transaction-sec">
+            <div class="balance-row">
+                <div class="deposit col">
+                    <p>Deposit</p>
+                    <h1>$ <span>00</span></h1>
+                </div>
+                <div class="withdraw col">
+                    <p>Withdraw</p>
+                    <h1>$ <span>00</span></h1>
+                </div>
+                <div class="balance col">
+                    <p>Balance</p>
+                    <h1>$ <span>500</span></h1>
+                </div>
+            </div>
+            <div class="transaction-row">
+                <div class="col">
+                    <p>Deposit</p>
+                    <input id="deposit-amount" type="text" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button class="deposit-btn">Deposit</button>
+                </div>
+                <div class="col">
+                    <p>Withdraw</p>
+                    <input id="withdraw-amount" type="text" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button class="withdraw-btn">Deposit</button>
+                </div>
             </div>
         </div>
     </main>
