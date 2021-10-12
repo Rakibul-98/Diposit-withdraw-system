@@ -1,0 +1,54 @@
+*{
+    color: white;
+}
+body{
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav li{
+    list-style: none;
+    
+}
+.nav li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+.active{
+    background-color: royalblue;
+}
+.nav li a:hover{
+    background-color: royalblue;
+}
+.login{
+    width: 30%;
+    box-shadow: 5px 5px 20px rgb(255, 104, 4);
+    padding: 10px 20px;
+    margin: 10% 8% auto auto;
+}
+.login-form{
+    margin-left: 20px;
+}
+.title{
+    text-align: center;
+}
+.text-input{
+    width: 80%;
+    margin-bottom: 20px;
+    color: black;
+}
+.login-btn{
+    border: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+    background-color: blue;
+    font-weight: bold;
+}
